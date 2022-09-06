@@ -2,8 +2,8 @@
 
 int SumNumber(int m, int n)
 {
-    if (n == m) return m;
-    else return n + SumNumber (n - 1, m);
+    if (m == n) return m;
+    else return n + SumNumber (m, n - 1);
 }
 
 Console.WriteLine("Введите число от которого будт показаны все числа: ");
